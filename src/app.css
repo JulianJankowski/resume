@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #181818;
+}
+
+.divider-line {
+    background-image: linear-gradient(#fff, #fff);
+    background-size: 1px 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 50%;
+}
