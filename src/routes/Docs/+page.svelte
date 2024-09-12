@@ -9,8 +9,7 @@
             <div class="flex container mx-auto columns-1 text-center text-slate-100 size-max min-h-svh items-center">
                 <div 
                     class="grid">
-                    <h2 class="leading-loose text-5xl col-1">Julian Jankowski</h2>
-                    <h3 class="leading-loose text-5xl col-1">Julian Jankowski</h3>
+                    <h2 class="leading-loose text-5xl col-1">Docs</h2>
                 </div>
             </div>
         </div>
