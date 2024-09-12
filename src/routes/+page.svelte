@@ -1,24 +1,38 @@
 <script>
     import profile from '$lib/assets/profile.jpg'
+
+    // Initialization for ES Users
+    function toggleNav(event) {
+        document.getElementById("smallNav").style.transform = document.getElementById("smallNav").style.transform != "scaleY(0)" ? "scaleY(0)" : "scaleY(1)";
+    }
 </script>
 
-<nav class="flex items-center justify-between flex-wrap bg-transparent p-6">
+<nav class="relative flex items-center justify-between flex-wrap bg-transparent p-6 data-twe-navbar-ref">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <span class="font-semibold text-xl tracking-tight">Julian Jankowski</span>
+        <span class="font-semibold text-2xl tracking-tight">Julian Jankowski</span>
     </div>
     <div class="block lg:hidden">
-        <button class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-teal-200 hover:border-teal-200">
+        <button 
+            class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-teal-200 hover:border-teal-200"
+            type="button"
+            on:click={toggleNav}
+            aria-controls="navbarSupportedContent1"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
         </button>
     </div>
-    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200 mr-4">
+    <div 
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto transition-all linear duration-200" 
+        id="smallNav"
+        style="transform-origin: 0% 0%; transform:scaleY(0)">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
             Docs
         </a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200 mr-4">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
             Examples
         </a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-teal-200">
+        <a href="#responsive-header" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300">
             Blog
         </a>
         <div class="absolute lg:right-20 max-lg:pt-5">
@@ -36,36 +50,40 @@
     </div>
 </nav>
 
-<div class="flex p-10">
+<div class="flex">
     <main class="w-screen">
-        <div class="flex container mx-auto columns-1 text-center size-max min-h-svh items-center">
-            <div class="grid">
-                <h2 class="leading-loose text-5xl col-1">Julian Jankowski</h2>
-                <h3 class="leading-loose text-5xl col-1">Julian Jankowski</h3>
+        <div class="split-background w-screen h-screen">
+            <div class="flex container mx-auto columns-1 text-center text-slate-100 size-max min-h-svh items-center">
+                <div 
+                    class="grid">
+                    <h2 class="leading-loose text-5xl col-1">Julian Jankowski</h2>
+                    <h3 class="leading-loose text-5xl col-1">Julian Jankowski</h3>
+                </div>
             </div>
         </div>
-        
-        <div class="flex mx-auto lg:columns-3 max-lg:columns-1 min-h-svh items-center">
-            <div class="p-10 text-slate-50 rounded bg-red-600 m-20 h-1/3 transition duration-150 ease-out focus:scale-110">
-                <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
-                <h2 class="leading-loose text-3xl">Software Developer</h2>
-                <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
-                <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
-                <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3>
-            </div>
-            <div class="p-10 text-slate-50 rounded bg-blue-600 m-20 h-1/3">
-                <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
-                <h2 class="leading-loose text-3xl">Software Developer</h2>
-                <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
-                <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
-                <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3>
-            </div>
-            <div class="p-10 text-slate-50 rounded bg-green-600 m-20 h-1/3">
-                <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
-                <h2 class="leading-loose text-3xl">Software Developer</h2>
-                <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
-                <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
-                <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3>
+        <div class="split-background-mirror w-screen-h-screen max-2xl:pt-96 max-2xl:pb-96 ">
+            <div class="2xl:flex mx-auto 2xl:columns-3 2xl:gap-[5%] xl:columns-1 max-2xl:w-[32rem] max-2xl:space-y-96 min-h-svh items-center justify-center">
+                <div class="p-10 border-solid border-4 border-slate-600 hover:border-teal-200 text-slate-50 h-[30rem] w-[30rem] rounded rounded-3xl bg-gradient-to-b from-teal-500 to-blue-600 h-1/3 transition duration-150 ease-out hover:scale-110">
+                    <!-- <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
+                    <h2 class="leading-loose text-3xl">Software Developer</h2>
+                    <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
+                    <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
+                    <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3> -->
+                </div>
+                <div class="p-10 border-solid border-4 border-slate-600 hover:border-teal-200 text-slate-50 2xl:w-[30rem] rounded rounded-3xl bg-gradient-to-b from-blue-600 to-fuchsia-600 h-1/3 transition duration-150 ease-out hover:scale-110">
+                    <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
+                    <h2 class="leading-loose text-3xl">Software Developer</h2>
+                    <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
+                    <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
+                    <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3>
+                </div>
+                <div class="p-10 border-solid border-4 border-slate-600 hover:border-teal-200 text-slate-50 2xl:w-[30rem] rounded-3xl bg-gradient-to-b from-fuchsia-600 to-rose-600 h-1/3 transition duration-150 ease-out hover:scale-110">
+                    <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
+                    <h2 class="leading-loose text-3xl">Software Developer</h2>
+                    <h2 class="leading-loose text-3xl">Salesforce Architect</h2>
+                    <h2 class="leading-loose text-3xl">3x Salesforce Certified</h2>
+                    <h3 class="leading-loose text-l pt-5">4 years of professional Salesforce development experience working on both large and small scale projects</h3>
+                </div>
             </div>
         </div>
     </main>
