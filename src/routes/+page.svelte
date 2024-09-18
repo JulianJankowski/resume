@@ -4,8 +4,8 @@
 
 
 <div class="flex">
-    <main class="w-screen">
-        <div class="split-background w-screen h-screen">
+    <main class="w-full">
+        <div class="split-background w-full h-screen">
             <div class="flex container mx-auto columns-1 text-center text-slate-100 size-max min-h-svh items-center">
                 <div 
                     class="grid">
@@ -14,8 +14,8 @@
                 </div>
             </div>
         </div>
-        <div class="split-background-mirror w-screen-h-screen max-2xl:pt-96 max-2xl:pb-96 ">
-            <div class="2xl:flex mx-auto 2xl:columns-3 2xl:gap-[5%] xl:columns-1 max-2xl:w-[32rem] max-2xl:space-y-96 min-h-svh items-center justify-center">
+        <div class="split-background-mirror w-full min-h-screen max-2xl:pt-96 max-2xl:pb-96 ">
+            <div class="2xl:flex mx-auto 2xl:columns-3 2xl:gap-[5%] max-2xl:columns-1 max-2xl:w-[32rem] max-2xl:space-y-96 min-h-svh items-center justify-center">
                 <div class="p-10 border-solid border-4 border-slate-600 hover:border-teal-200 text-slate-50 h-[30rem] w-[30rem] rounded rounded-3xl bg-gradient-to-b from-teal-500 to-blue-600 h-1/3 transition duration-150 ease-out hover:scale-110">
                     <!-- <h2 class="leading-loose text-5xl">Julian Jankowski</h2>
                     <h2 class="leading-loose text-3xl">Software Developer</h2>

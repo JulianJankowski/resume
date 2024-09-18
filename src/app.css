@@ -33,20 +33,27 @@ body {
 p, a, span, button {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 250;
     font-style: normal;
 }
   
 h3, h4 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
   
-h1, h2 {
+h1 {
     font-family: "Fira Code", monospace;
     font-optical-sizing: auto;
     font-weight: 500;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
     font-style: normal;
 }
