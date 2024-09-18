@@ -1,6 +1,7 @@
 <script>
     import "../app.css";
     import { fade } from 'svelte/transition';
+    import { base } from '$app/paths';
 
     // Initialization for ES Users
     function toggleNav(event) {
@@ -20,7 +21,7 @@
   
 <nav class="relative flex items-center justify-between flex-wrap bg-transparent p-6 data-twe-navbar-ref">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a href='/' class="font-semibold text-2xl tracking-tight">Julian Jankowski</a>
+        <a href='{base}/' class="font-semibold text-2xl tracking-tight">Julian Jankowski</a>
     </div>
     <div class="block lg:hidden">
         <button 
@@ -36,13 +37,13 @@
     <div 
         class="w-full block flex-grow lg:flex lg:items-center lg:w-auto transition-all linear duration-200 small-nav" 
         id="smallNav">
-        <a href="/Docs" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
+        <a href="{base}/Docs" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
             Docs
         </a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
+        <a href="{base}/" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
             Examples
         </a>
-        <a href="#responsive-header" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300">
+        <a href="{base}/" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300">
             Blog
         </a>
         <div class="absolute lg:right-20 max-lg:pt-5">
