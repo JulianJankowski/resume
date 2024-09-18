@@ -4,11 +4,19 @@
 
     // Initialization for ES Users
     function toggleNav(event) {
-        document.getElementById("smallNav").style.transform = document.getElementById("smallNav").style.transform != "scaleY(0)" ? "scaleY(0)" : "scaleY(1)";
+        document.getElementById("smallNav").style.transform = document.getElementById("smallNav").style.transform != "scaleY(1)" ? "scaleY(1)" : "scaleY(0)";
     }
 
     export let data;
 </script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
   
 <nav class="relative flex items-center justify-between flex-wrap bg-transparent p-6 data-twe-navbar-ref">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
@@ -26,9 +34,8 @@
         </button>
     </div>
     <div 
-        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto transition-all linear duration-200" 
-        id="smallNav"
-        style="transform-origin: 0% 0%; transform:scaleY(0)">
+        class="w-full block flex-grow lg:flex lg:items-center lg:w-auto transition-all linear duration-200 small-nav" 
+        id="smallNav">
         <a href="/Docs" class="block mt-4 lg:inline-block text-xl lg:mt-0 text-white transition-all duration-200 ease-in-out hover:text-teal-300 mr-4">
             Docs
         </a>
