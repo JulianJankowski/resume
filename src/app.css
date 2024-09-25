@@ -35,6 +35,7 @@ p, a, span, button {
     font-optical-sizing: auto;
     font-weight: 250;
     font-style: normal;
+    line-height: 32px;
 }
   
 h3, h4 {

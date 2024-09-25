@@ -3,7 +3,10 @@
 		"src/routes/+layout.js",
 		"src/routes/+layout.js"
 	],
-	"/Docs": [
+	"/Examples": [
+		"src/routes/+layout.js"
+	],
+	"/Socials": [
 		"src/routes/+layout.js"
 	]
 }
