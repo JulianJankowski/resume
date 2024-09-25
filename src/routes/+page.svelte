@@ -2,7 +2,7 @@
     // import { render } from 'svelte-email';
     // import nodemailer from 'nodemailer';
 
-    // function sendEmail(){
+    function sendEmail(){
     //     const transporter = nodemailer.createTransport({
     //         host: 'smtp.ethereal.email',
     //         port: 587,
@@ -21,7 +21,7 @@
     //     };
 
     //     transporter.sendMail(options);
-    // }
+    }
 </script>
 
 <div class="flex">
