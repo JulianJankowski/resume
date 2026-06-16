@@ -132,7 +132,6 @@
             <div class="text-center mb-12">
                 <p class="text-teal-400 text-xs font-semibold tracking-[0.2em] uppercase mb-3">Contact</p>
                 <h2 class="text-3xl sm:text-4xl text-white mb-4">Get in Touch</h2>
-                <p class="text-slate-400 text-sm">Have a project in mind or just want to say hi? Drop me a message.</p>
             </div>
 
             <div class="p-8 rounded-2xl bg-white/[0.03] border border-white/10">
@@ -170,7 +169,6 @@
     <!-- ── Footer ── -->
     <footer class="py-8 px-6 border-t border-white/5">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p class="text-slate-600 text-sm">© 2025 Julian Jankowski</p>
             <div class="flex gap-6">
                 <a href="https://github.com/JulianJankowski" class="text-slate-500 hover:text-white text-sm transition-colors duration-200">GitHub</a>
                 <a href="https://www.linkedin.com/in/julian-jankowski-b1636b151/" class="text-slate-500 hover:text-white text-sm transition-colors duration-200">LinkedIn</a>
