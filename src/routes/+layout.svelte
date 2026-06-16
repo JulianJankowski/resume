@@ -23,8 +23,8 @@
 
     <!-- Desktop nav -->
     <div class="hidden lg:flex items-center gap-6">
-        <a href="{base}/Examples" class="text-sm text-slate-400 hover:text-white transition-colors duration-200 tracking-wide">
-            Examples
+        <a href="{base}/Projects" class="text-sm text-slate-400 hover:text-white transition-colors duration-200 tracking-wide">
+            Projects
         </a>
         <a href="{base}/Socials" class="text-sm text-slate-400 hover:text-white transition-colors duration-200 tracking-wide">
             Socials
@@ -59,7 +59,7 @@
     class="small-nav fixed top-[65px] left-0 right-0 z-40 bg-[#0a0a0a]/95 backdrop-blur-md border-b border-white/5 lg:hidden"
     id="smallNav">
     <div class="px-6 py-6 flex flex-col gap-1">
-        <a href="{base}/Examples" class="text-slate-300 hover:text-white transition-colors py-2 text-sm">Examples</a>
+        <a href="{base}/Projects" class="text-slate-300 hover:text-white transition-colors py-2 text-sm">Projects</a>
         <a href="{base}/Socials" class="text-slate-300 hover:text-white transition-colors py-2 text-sm">Socials</a>
         <div class="pt-3 mt-1 border-t border-white/10 flex gap-4">
             <a href="https://www.github.com/JulianJankowski" class="text-slate-400 hover:text-white transition-colors py-2 text-sm">GitHub</a>
