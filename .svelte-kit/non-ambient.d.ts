@@ -23,3 +23,23 @@ declare module "svelte/elements" {
 }
 
 export {};
+
+
+declare module "$app/types" {
+	type MatcherParam<M> = M extends (param : string) => param is (infer U extends string) ? U : string;
+
+	export interface AppTypes {
+		RouteId(): "/" | "/Examples" | "/Socials";
+		RouteParams(): {
+			
+		};
+		LayoutParams(): {
+			"/": Record<string, never>;
+			"/Examples": Record<string, never>;
+			"/Socials": Record<string, never>
+		};
+		Pathname(): "/" | "/Examples" | "/Socials";
+		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
+		Asset(): "/.nojekyll" | "/favicon.png" | string & {};
+	}
+}

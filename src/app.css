@@ -2,59 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #1d1d1d;
-}
-
-.divider-line {
-    background-image: linear-gradient(#fff, #fff);
-    background-size: 1px 100%;
-    background-repeat: no-repeat;
-    background-position: center center;
-    opacity: 50%;
-}
-
-.split-background {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect x="0" y="0" width="100%" height="50%" fill="%231d1d1d"/><rect x="0" y="50%" width="100%" height="50%" fill="%232d2d2d"/></svg>');
-}
-
-.split-background-mirror {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><rect x="0" y="0" width="100%" height="50%" fill="%232d2d2d"/><rect x="0" y="50%" width="100%" height="50%" fill="%231d1d1d"/></svg>');
+    background-color: #0a0a0a;
+    color: #f8fafc;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
 }
 
 .small-nav {
-    transform-origin: 0% 0%; 
-    
+    transform-origin: 0% 0%;
+
     @media screen and (max-width: 1024px) {
         transform: scaleY(0);
-    }   
+    }
 }
-  
-p, a, span, button {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 250;
-    font-style: normal;
-    line-height: 32px;
+
+@keyframes fade-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
-  
-h3, h4 {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-  
+
+.anim-fade-up            { animation: fade-up 0.6s ease both; }
+.anim-delay-1            { animation-delay: 0.10s; }
+.anim-delay-2            { animation-delay: 0.22s; }
+.anim-delay-3            { animation-delay: 0.36s; }
+.anim-delay-4            { animation-delay: 0.50s; }
+.anim-delay-5            { animation-delay: 0.64s; }
+
 h1 {
     font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+    font-weight: 600;
+    line-height: 1.1;
 }
 
 h2 {
-    font-family: "Fira Code", monospace;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+h3, h4 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.tiktok-embed {
+    max-width: 100%;
+    min-width: 288px;
+    border-radius: 16px;
 }
