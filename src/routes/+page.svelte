@@ -25,7 +25,7 @@
 
             <!-- Subtitle -->
             <p class="anim-fade-up anim-delay-2 text-lg sm:text-xl text-slate-400 mb-12 tracking-wide">
-                Software Developer <span class="text-teal-500 font-semibold">·</span> Salesforce Consultant
+                Software Developer <span class="text-teal-500 font-semibold">·</span> Salesforce Consultant <span class="text-teal-500 font-semibold">·</span> V5 Boulderer
             </p>
 
             <!-- CTAs -->
